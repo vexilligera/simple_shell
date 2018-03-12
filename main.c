@@ -7,7 +7,7 @@
 char history[MAXLINE][MAXLINE];
 int hiscnt = 0;
 
-int run(char *cmd, int *fd, int fdin, int out) {
+void run(char *cmd, int *fd, int fdin, int out) {
 	char *argv[MAXLINE];
 	int argc, i, status;
 	pid_t pid;
